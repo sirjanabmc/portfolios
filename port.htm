@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Switch</title>
+    <style>
+        .container {
+            background-color: black;
+            border-radius: 40px;
+            width: 140px;
+            height: 60px;
+            display: flex; /* Fixed: Uncommented this */
+            align-items: center;
+            justify-content: start;
+            border: 2px solid white;
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.4s ease;
+        }
+
+        .nextContainer {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 0.4s;
+            position: relative; /* Changed from absolute */
+        }
+
+        body {
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="handleToggle()" class="container">
+        <div class="nextContainer"></div>
+    </div>
+
+    <script>
+        function handleToggle() {
+            const toggle = document.querySelector(".container");
+            const toggle2 = document.querySelector(".nextContainer");
+            const currentJustify = getComputedStyle(toggle).justifyContent; // Get computed style
+
+            if (currentJustify === 'end') {
+                toggle.style.justifyContent = 'start';
+                toggle2.style.backgroundColor = 'white';
+                document.body.style.backgroundColor = 'white';
+            } else {
+                toggle.style.justifyContent = 'end';
+                toggle2.style.backgroundColor = 'grey';
+                document.body.style.backgroundColor = 'black';
+            }
+        }
+    </script>
+</body>
+
+</html>

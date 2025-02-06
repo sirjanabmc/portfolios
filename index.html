@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="./project.d2edbfe1_ZuohRd.png" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<style>
+    .ccontainer {
+        background-color: black;
+        border-radius: 40px;
+        width: 140px;
+        height: 60px;
+        display: flex; /* Fixed: Uncommented this */
+        align-items: center;
+        justify-content: start;
+        border: 2px solid white;
+        cursor: pointer;
+        position: relative;
+        transition: background-color 0.4s ease;
+    }
+
+    .nextContainer {
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: 0.4s;
+        position: relative; /* Changed from absolute */
+    }
+
+    body {
+        transition: 0.5s;
+    }
+</style>
+
+<body>
+    
+    <header class="header container">
+        <div class="learn-more">
+            <a href="download cv" class="learn-more-btn">Download CV</a>
+
+          </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            
+                    <li>
+                        <div onclick="handleToggle()" class="ccontainer">
+                            <div class="nextContainer"></div>
+                        </div>
+                    </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-text">
+                <h1>Hi! My name is <span class="highlight">sirjana Bhattarai</span> and I am a web developer based in New York.</h1>
+                <div class="learn-more">
+                    <a href="Learn-more" class="learn-more-btn">Learn More</a>
+                  </div>
+            </div>
+            <div class="hero-image">
+                <img src="./hero.f50e213d_Fme8W.png" alt="Coding girl" width="600" height="600">
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <section id="about" class="about-section">
+        <div class="about-header">
+            <h2>About me</h2>
+            <span class="underline"></span>
+        </div>
+    
+        <div class="about-content">
+            <p>
+                Here is your description in English! Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum.
+            </p>
+        </div>
+    </section>
+    
+  
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <span class="underline"></span>
+        
+        <div class="projects-container">
+            <section class="project-card">
+                <article class="card">
+                        <div class="card-image">
+                            <img src="./project.d2edbfe1_ZuohRd.png" alt="project image alt text" width="400" height="400">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Project title</h3>
+                            <p class="card-description">Project description</p>
+                            <div class="tags">
+                                <span>#React</span>
+                                <span>#CSS</span>
+                                <span>#Typescript</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+    
+            <section class="project-card">
+                <article class="card">
+                    
+                        <div class="card-image">
+                            <img src="./project.d2edbfe1_ZuohRd.png" alt="project image alt text" width="400" height="400">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Project title</h3>
+                            <p class="card-description">Project description</p>
+                            <div class="tags">
+                                <span>#React</span>
+                                <span>#CSS</span>
+                                <span>#Typescript</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+    
+            <section class="project-card">
+                <article class="card">
+                
+                        <div class="card-image">
+                            <img src="./project.d2edbfe1_ZuohRd.png" alt="project image alt text" width="400" height="400">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Project title</h3>
+                            <p class="card-description">Project description</p>
+                            <div class="tags">
+                                <span>#React</span>
+                                <span>#CSS</span>
+                                <span>#Typescript</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </div>
+    </section>
+    
+        <div class="project-footer">
+            <div class="view-archive">
+                <h2>View full private projects archive</h2>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="contact-section">
+               
+                <div class="learn-more">
+                    <a href="Learn-more" class="learn-more-btn">Say Hello</a>
+                  </div>
+                <hr class="divider">
+                <div class="social-icons">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    
+    <footer>
+        <p>Copyright © 2023. All rights reserved. Made by <span class="highlight">Veranika Kasparevych</span> Assets designed by <span class="highlight">freepik.</span></p>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+</body>
+<script>
+    function handleToggle() {
+        const toggle = document.querySelector(".ccontainer");
+        const toggle2 = document.querySelector(".nextContainer");
+        const currentJustify = getComputedStyle(toggle).justifyContent; // Get computed style
+
+        if (currentJustify === 'end') {
+            toggle.style.justifyContent = 'start';
+            toggle2.style.backgroundColor = 'white';
+            document.body.style.backgroundColor = 'white';
+        } else {
+            toggle.style.justifyContent = 'end';
+            toggle2.style.backgroundColor = 'grey';
+            document.body.style.backgroundColor = 'black';
+        }
+    }
+</script>
+
+</html>
+
+
